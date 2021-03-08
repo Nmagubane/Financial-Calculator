@@ -25,6 +25,11 @@ public class FutureInvestmentValue {
 	*/
         double futureValue = present * Math.pow((1 + interest/100), period);
         System.out.println("Future Value of the asset is: " + futureValue);
+        /* Here we calculate the total interest amount gained
+        over the period we specified
+         */
+        double totalInterest = futureValue - present;
+        System.out.print("The total interest amount gained is: " + totalInterest);
 
     }
     public static void main(String args[]){
